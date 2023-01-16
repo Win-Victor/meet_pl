@@ -1,0 +1,15 @@
+D:\meeting_pl\lec2\obj\Debug\net6.0\lec2.csproj.AssemblyReference.cache
+D:\meeting_pl\lec2\obj\Debug\net6.0\lec2.GeneratedMSBuildEditorConfig.editorconfig
+D:\meeting_pl\lec2\obj\Debug\net6.0\lec2.AssemblyInfoInputs.cache
+D:\meeting_pl\lec2\obj\Debug\net6.0\lec2.AssemblyInfo.cs
+D:\meeting_pl\lec2\obj\Debug\net6.0\lec2.csproj.CoreCompileInputs.cache
+D:\meeting_pl\lec2\bin\Debug\net6.0\lec2.exe
+D:\meeting_pl\lec2\bin\Debug\net6.0\lec2.deps.json
+D:\meeting_pl\lec2\bin\Debug\net6.0\lec2.runtimeconfig.json
+D:\meeting_pl\lec2\bin\Debug\net6.0\lec2.dll
+D:\meeting_pl\lec2\bin\Debug\net6.0\lec2.pdb
+D:\meeting_pl\lec2\obj\Debug\net6.0\lec2.dll
+D:\meeting_pl\lec2\obj\Debug\net6.0\refint\lec2.dll
+D:\meeting_pl\lec2\obj\Debug\net6.0\lec2.pdb
+D:\meeting_pl\lec2\obj\Debug\net6.0\lec2.genruntimeconfig.cache
+D:\meeting_pl\lec2\obj\Debug\net6.0\ref\lec2.dll
