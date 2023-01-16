@@ -5,6 +5,24 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
+Console.Write("Введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+if (num1 > num2) 
+{
+    Console.WriteLine($"Max = {num1}.");
+}
+else if (num1 < num2)
+{
+    Console.WriteLine($"Max = {num2}.");
+}
+else
+{
+    Console.WriteLine($"Введенные числа равны. Max = {num1}.");
+}
+
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт 
 // максимальное из этих чисел.
 
