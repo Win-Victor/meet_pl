@@ -30,6 +30,34 @@ else
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
+Console.Write("Введите первое число: ");
+int num41 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int num42 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите первое число: ");
+int num43 = Convert.ToInt32(Console.ReadLine());
+
+if (num41 >= num42)
+{
+    if (num41 >= num43)
+    {
+        Console.WriteLine($"Max = {num41}.");
+    }
+    else
+    {
+        Console.WriteLine($"Max = {num43}.");
+    }
+}
+else if (num42 >= num43)
+{
+    Console.WriteLine($"Max = {num42}.");
+}
+else
+{
+    Console.WriteLine($"Max = {num43}.");
+}
+
+
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, 
 // является ли число чётным (делится ли оно на два без остатка).
 
