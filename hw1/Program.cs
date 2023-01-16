@@ -79,3 +79,13 @@ else
 
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
+
+Console.Write("Введите число: ");
+int num8 = Convert.ToInt32(Console.ReadLine());
+int newNum = 2;
+
+while (newNum <= num8) 
+{
+    Console.Write(newNum + ", ");
+    newNum++;
+}
