@@ -1,0 +1,15 @@
+D:\meeting_pl\hw4\bin\Debug\net6.0\hw4.exe
+D:\meeting_pl\hw4\bin\Debug\net6.0\hw4.deps.json
+D:\meeting_pl\hw4\bin\Debug\net6.0\hw4.runtimeconfig.json
+D:\meeting_pl\hw4\bin\Debug\net6.0\hw4.dll
+D:\meeting_pl\hw4\bin\Debug\net6.0\hw4.pdb
+D:\meeting_pl\hw4\obj\Debug\net6.0\hw4.csproj.AssemblyReference.cache
+D:\meeting_pl\hw4\obj\Debug\net6.0\hw4.GeneratedMSBuildEditorConfig.editorconfig
+D:\meeting_pl\hw4\obj\Debug\net6.0\hw4.AssemblyInfoInputs.cache
+D:\meeting_pl\hw4\obj\Debug\net6.0\hw4.AssemblyInfo.cs
+D:\meeting_pl\hw4\obj\Debug\net6.0\hw4.csproj.CoreCompileInputs.cache
+D:\meeting_pl\hw4\obj\Debug\net6.0\hw4.dll
+D:\meeting_pl\hw4\obj\Debug\net6.0\refint\hw4.dll
+D:\meeting_pl\hw4\obj\Debug\net6.0\hw4.pdb
+D:\meeting_pl\hw4\obj\Debug\net6.0\hw4.genruntimeconfig.cache
+D:\meeting_pl\hw4\obj\Debug\net6.0\ref\hw4.dll
