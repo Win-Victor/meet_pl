@@ -102,3 +102,68 @@ string replase(string text, char oldValue, char newValue)
 // System.Console.WriteLine(text);
 string newMyText = replase(text, ' ', '*');
 System.Console.WriteLine(newMyText);
+
+
+// сортировка выбором
+
+int [] array = {1, 5, 3, 4, 6, 7, 3, 1};
+
+void PrintArray (int [] array) // вывести в консоль массив
+{
+    int count = array.Length;
+    for (int i = 0; i < count; i++)
+    {
+        System.Console.Write($"{array[i]} ");
+    } 
+    System.Console.WriteLine();
+}
+
+
+
+
+void SelectionSort (int [] array) // сортировака по возрастанию
+{
+System.Console.WriteLine("Сортировка массива по возрастанию");
+System.Console.Write("Массив до сортировки: ");
+PrintArray(array);
+int length = array.Length;
+for(int i = 0; i < length - 1; i++)
+{
+    int minPosition = i;
+    for (int j = i + 1; j < length; j++)
+    {
+        if (array[j] < array[minPosition]) minPosition = j;
+    }
+    int teporary = array[i];
+    array[i] = array[minPosition];
+    array[minPosition] = teporary;
+}
+System.Console.Write("Массив после сортировки: ");
+PrintArray(array);
+System.Console.WriteLine();
+}
+
+SelectionSort(array);
+
+void SelectionSortRev (int [] array) // сортировака по убыванию
+{
+System.Console.WriteLine("Сортировка массива по убыванию");
+System.Console.Write("Массив до сортировки: ");
+PrintArray(array);
+int length = array.Length;
+for(int i = 0; i < length - 1; i++)
+{
+    int minPosition = i;
+    for (int j = i + 1; j < length; j++)
+    {
+        if (array[j] > array[minPosition]) minPosition = j;
+    }
+    int teporary = array[i];
+    array[i] = array[minPosition];
+    array[minPosition] = teporary;
+}
+System.Console.Write("Массив после сортировки: ");
+PrintArray(array);
+}
+
+SelectionSortRev(array);
