@@ -62,6 +62,13 @@ SumNumbers();
 
 void GetArray(int min_el, int max_el, int length_arr)
 {
-    int[] array = new array [length_arr];
-    for(int i = 0; i < length_arr; i++) array[i] = new Ro
+    System.Console.WriteLine("GetArray");
+    int[] array = new int[length_arr];
+    for(int i = 0; i < length_arr; i++) array[i] = new Random().Next(min_el, max_el + 1);
+    System.Console.WriteLine($"[{string.Join(", ", array)}]");
+    System.Console.WriteLine();
 }
+
+GetArray(0, 1, 8);
+GetArray(1, 99, 8);
+GetArray(-256, 256, 256);
