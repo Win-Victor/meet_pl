@@ -59,3 +59,22 @@ int MyFactorial()
 
 int newFactorial = MyFactorial();
 System.Console.WriteLine(newFactorial);
+
+
+// Артём Макеев: Задача 30: Напишите программу, которая выводит массив из 8 элементов, 
+// заполненный нулями и единицами в случайном порядке.
+// [1,0,1,1,0,1,0,0]
+
+void Get_1_2_Array(int length)
+{
+    System.Console.WriteLine("Get_1_2_Array");
+    int [] array = new int[length];
+    for (int i = 0; i < length; i++) array[i] = new Random().Next(0, 2);
+    for (int i = 0; i < length; i++) System.Console.Write($"{array[i]} ");
+}
+
+Get_1_2_Array(8);
+System.Console.WriteLine();
+Get_1_2_Array(8);
+System.Console.WriteLine();
+Get_1_2_Array(8);
