@@ -70,7 +70,8 @@ void Get_1_2_Array(int length)
     System.Console.WriteLine("Get_1_2_Array");
     int [] array = new int[length];
     for (int i = 0; i < length; i++) array[i] = new Random().Next(0, 2);
-    for (int i = 0; i < length; i++) System.Console.Write($"{array[i]} ");
+    // for (int i = 0; i < length; i++) System.Console.Write($"{array[i]} "); // вывод через цикл
+    System.Console.WriteLine($"[{string.Join(", ", array)}]"); // вывод через метод Join
 }
 
 Get_1_2_Array(8);
