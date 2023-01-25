@@ -1,0 +1,15 @@
+D:\meeting_pl\sem4\obj\Debug\net6.0\sem4.csproj.AssemblyReference.cache
+D:\meeting_pl\sem4\obj\Debug\net6.0\sem4.GeneratedMSBuildEditorConfig.editorconfig
+D:\meeting_pl\sem4\obj\Debug\net6.0\sem4.AssemblyInfoInputs.cache
+D:\meeting_pl\sem4\obj\Debug\net6.0\sem4.AssemblyInfo.cs
+D:\meeting_pl\sem4\obj\Debug\net6.0\sem4.csproj.CoreCompileInputs.cache
+D:\meeting_pl\sem4\bin\Debug\net6.0\sem4.exe
+D:\meeting_pl\sem4\bin\Debug\net6.0\sem4.deps.json
+D:\meeting_pl\sem4\bin\Debug\net6.0\sem4.runtimeconfig.json
+D:\meeting_pl\sem4\bin\Debug\net6.0\sem4.dll
+D:\meeting_pl\sem4\bin\Debug\net6.0\sem4.pdb
+D:\meeting_pl\sem4\obj\Debug\net6.0\sem4.dll
+D:\meeting_pl\sem4\obj\Debug\net6.0\refint\sem4.dll
+D:\meeting_pl\sem4\obj\Debug\net6.0\sem4.pdb
+D:\meeting_pl\sem4\obj\Debug\net6.0\sem4.genruntimeconfig.cache
+D:\meeting_pl\sem4\obj\Debug\net6.0\ref\sem4.dll
