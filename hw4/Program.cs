@@ -45,4 +45,8 @@ System.Console.WriteLine();
 6, 1, 33 -> [6, 1, 33]
 */
 
-int [] 
+int[] GetArray()
+{
+    int[] array = new [8];
+    System.Console.WriteLine(array);
+}
