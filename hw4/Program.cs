@@ -1,6 +1,7 @@
 ﻿/* 
 Урок 4. Функции
-Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+Задача 25: Напишите цикл, который принимает на вход два числа (A и B) 
+и возводит число A в натуральную степень B.
 3, 5 -> 243 (3⁵)
 2, 4 -> 16
 */
@@ -28,25 +29,39 @@ System.Console.WriteLine();
 
 void SumNumbers()
 {
-    System.Console.Write("Введите натуральное число: ");
-    string num = System.Console.ReadLine();
-    int res = 0;
-    for (int count = 0; count < num.Length; count++) res += Convert.ToInt32(Convert.ToString(num[count]));
-    System.Console.WriteLine($"Сумма цифр в введенном числе {num}: {res}");
+    System.Console.WriteLine("SumNumbers");
+    while (true)
+    {
+        System.Console.Write("Введите натуральное число: ");
+        int num;
+        if (int.TryParse(Console.ReadLine(), out num))
+        {
+            int res = 0;
+            string numStr = Convert.ToString(num);
+            for (int count = 0; count < numStr.Length; count++) res += Convert.ToInt32(Convert.ToString(numStr[count]));
+            System.Console.WriteLine($"Сумма цифр в введенном числе {numStr}: {res}");
+            break;
+        }
+        else System.Console.WriteLine("Введено некорректное число, попробуйте еще раз.");
+    }
+    
+    // string num = System.Console.ReadLine();
+  
+
 }
 
 SumNumbers();
 
-System.Console.WriteLine();
+// System.Console.WriteLine();
 
-/*
-Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
-1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-6, 1, 33 -> [6, 1, 33]
-*/
+// /*
+// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 6, 1, 33 -> [6, 1, 33]
+// */
 
-int[] GetArray()
+void GetArray(int min_el, int max_el, int length_arr)
 {
-    int[] array = new [8];
-    System.Console.WriteLine(array);
+    int[] array = new array [length_arr];
+    for(int i = 0; i < length_arr; i++) array[i] = new Ro
 }
