@@ -152,3 +152,10 @@ int[] MultArray(int[] array)
 
 int[] newSum = MultArray(arrForSum);
 PrintArray(newSum);
+
+
+// получение случайного вещественного числа (float)
+
+Random rand = new Random();
+double temp = rand.Next(-10, 10) + rand.NextDouble();
+System.Console.WriteLine(Math.Round(temp, 3));
