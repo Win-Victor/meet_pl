@@ -135,17 +135,20 @@ System.Console.WriteLine($"newCount = {newCount}");
 System.Console.WriteLine();
 int[] arrForSum = FillArrayWithRandomNumbers(11, 1, 10);
 PrintArray(arrForSum);
-int[] SumArray(int[] array)
+int[] MultArray(int[] array)
 {
-    int median = array.Length/2;
-    int[] newSumArray = new int[median];
+    int median = array.Length / 2;
+    int lengthNewArray = median;
+    if (array.Length % 2 != 0) { lengthNewArray += 1; }
 
-    for(int i = 0;  i < median; i++)
-    {
-        newSumArray[i] = array[i] * array[array.Length - 1 - i];
-    }
-    return newSumArray;
+    int[] newArray = new int[lengthNewArray];
+
+    for (int i = 0; i < median; i++) newArray[i] = array[i] * array[array.Length - 1 - i];
+
+    if (lengthNewArray > median) newArray[lengthNewArray - 1] = arrForSum[lengthNewArray - 1];
+
+    return newArray;
 }
 
-int [] newSum = SumArray(arrForSum);
+int[] newSum = MultArray(arrForSum);
 PrintArray(newSum);
