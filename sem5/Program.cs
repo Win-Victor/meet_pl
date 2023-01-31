@@ -142,7 +142,7 @@ int[] SumArray(int[] array)
 
     for(int i = 0;  i < median; i++)
     {
-        newSumArray[i] = array[i] + array[array.Length - 1 - i];
+        newSumArray[i] = array[i] * array[array.Length - 1 - i];
     }
     return newSumArray;
 }
