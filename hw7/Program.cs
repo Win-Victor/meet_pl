@@ -16,17 +16,18 @@ for(int i = 0; i < array2d.GetLength(0); i++)
 {
     for(int j = 0; j < array2d.GetLength(1); j++) 
     {
-        double temp = rand.Next(-10, 10) + rand.NextDouble();
-        array2d[i, j] = temp;
+        array2d[i, j] = rand.Next(-10, 10) + rand.NextDouble();
+        System.Console.Write($"{Math.Round(array2d[i,j], 2)}\t");
     }
+    System.Console.WriteLine();
 } 
 
 
-for(int i = 0; i < array2d.GetLength(0); i++)
-{
-    for(int j = 0; j < array2d.GetLength(1); j++) System.Console.Write($"{Math.Round(array2d[i,j], 2)}\t");
-        System.Console.WriteLine();
-} 
+// for(int i = 0; i < array2d.GetLength(0); i++)
+// {
+//     for(int j = 0; j < array2d.GetLength(1); j++) System.Console.Write($"{Math.Round(array2d[i,j], 2)}\t");
+//         System.Console.WriteLine();
+// } 
 
 // Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
@@ -35,6 +36,10 @@ for(int i = 0; i < array2d.GetLength(0); i++)
 // 5 9 2 3
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
+
+// int[,] array = new int[4,3]
+// {1, 4, 7, 2};
+
 
 
 
