@@ -1,5 +1,6 @@
 ﻿// Урок 8. Двумерные массивы. Продолжение
-// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит 
+// по убыванию элементы каждой строки двумерного массива.
 // Например, задан массив:
 // 1 4 7 2
 // 5 9 2 3
@@ -9,15 +10,15 @@
 // 9 5 3 2
 // 8 4 4 2
 
-int[,] arr8 = new int[3, 4] { { 1, 4, 7, 2 }, { 5, 9, 2, 3, }, { 8, 4, 2, 4 } };
+int[,] arr54 = new int[3, 4] { { 1, 4, 7, 2 }, { 5, 9, 2, 3, }, { 8, 4, 2, 4 } };
 
 void Print2Arr(int[,] arr)
 {
-    for (int i = 0; i < arr8.GetLength(0); i++)
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        for (int j = 0; j < arr8.GetLength(1); j++)
+        for (int j = 0; j < arr.GetLength(1); j++)
         {
-            System.Console.Write($"{arr8[i, j]} ");
+            System.Console.Write($"{arr[i, j]} ");
         }
         System.Console.WriteLine();
     }
@@ -43,24 +44,56 @@ void SortArray(int[,] array)
     }
 }
 
-Print2Arr(arr8);
-SortArray(arr8);
+Print2Arr(arr54);
+SortArray(arr54);
 System.Console.WriteLine();
-Print2Arr(arr8);
+Print2Arr(arr54);
 
-// Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
-
+// Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, 
+// которая будет находить строку с наименьшей суммой элементов.
 // Например, задан массив:
-
 // 1 4 7 2
-
 // 5 9 2 3
-
 // 8 4 2 4
-
 // 5 2 6 7
-
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
+
+System.Console.WriteLine();
+
+int[,] arr561 = new int[4, 4] { { 1, 4, 7, 2 }, { 5, 9, 2, 3, }, { 8, 4, 2, 4 }, { 5, 2, 6, 7 } };
+int[,] arr562 = new int[4, 4] { { 1, 4, 7, 2 }, { 1, 1, 1, 1, }, { 8, 4, 2, 4 }, { 5, 2, 6, 7 } };
+int[,] arr563 = new int[4, 4] { { 1, 4, 7, 2 }, { 5, 9, 1, 1, }, { 1, 1, 1, 1 }, { 5, 2, 6, 7 } };
+int[,] arr564 = new int[4, 4] { { 1, 4, 7, 2 }, { 5, 9, 1, 1, }, { 1, 1, 1, 1 }, { 0, 0, 0, 1 } };
+
+System.Console.WriteLine();
+void MinSumLine(int[,] array)
+{
+    int[] sumArray = new int[array.GetLength(0)];
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        int sum = 0;
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            sum += array[i, j];
+        }
+        sumArray[i] = sum;
+    }
+    // for(int i = 0; i < sumArray.Length; i++) System.Console.Write($"{sumArray[i]} " );
+    int min = 0;
+    for (int i = 1; i < sumArray.Length; i++) if (sumArray[i] < sumArray[min]) min = i;
+    System.Console.WriteLine($"Минимальная сумма элементов в строке: {min + 1}.");
+}
+Print2Arr(arr561);
+MinSumLine(arr561);
+System.Console.WriteLine();
+Print2Arr(arr562);
+MinSumLine(arr562);
+System.Console.WriteLine();
+Print2Arr(arr563);
+MinSumLine(arr563);
+System.Console.WriteLine();
+Print2Arr(arr564);
+MinSumLine(arr564);
 
 // Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 // Например, даны 2 матрицы:
