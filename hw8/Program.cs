@@ -103,7 +103,29 @@ MinSumLine(arr564);
 // 18 20
 // 15 18
 
-// Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+int[,] array1 = new int [2, 2] {{2, 4}, {3, 2}};
+int[,] array2 = new int [2, 2] {{3, 4}, {3, 3}};
+
+void MultArray(int[,] arr1, int[,] arr2)
+// работает только для умножения 2 матриц 2 х 2.
+{ 
+int[,] multArray = new int[2,2];
+multArray[0, 0] = array1[0, 0] * array2[0, 0] + array1[0, 1] * array2[1, 0];
+multArray[0, 1] = array1[0, 0] * array2[0, 1] + array1[0, 1] * array2[1, 1];
+multArray[1, 0] = array1[1, 0] * array2[0, 0] + array1[1, 1] * array2[1, 0];
+multArray[1, 1] = array1[1, 0] * array2[0, 1] + array1[1, 1] * array2[1, 1];
+System.Console.WriteLine();
+Print2Arr(arr1);
+System.Console.WriteLine("Умножить на");
+Print2Arr(arr2);
+System.Console.WriteLine("Равно");
+Print2Arr(multArray);
+}
+
+MultArray(array1, array2);
+
+// Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, 
+// которая будет построчно выводить массив, добавляя индексы каждого элемента.
 // Массив размером 2 x 2 x 2
 // 66(0,0,0) 25(0,1,0)
 // 34(1,0,0) 41(1,1,0)
