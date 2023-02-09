@@ -44,10 +44,10 @@ void SortArray(int[,] array)
     }
 }
 
-// Print2Arr(arr54);
-// SortArray(arr54);
-// System.Console.WriteLine();
-// Print2Arr(arr54);
+Print2Arr(arr54);
+SortArray(arr54);
+System.Console.WriteLine();
+Print2Arr(arr54);
 
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, 
 // которая будет находить строку с наименьшей суммой элементов.
@@ -58,14 +58,14 @@ void SortArray(int[,] array)
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
-// System.Console.WriteLine();
+System.Console.WriteLine();
 
 int[,] arr561 = new int[4, 4] { { 1, 4, 7, 2 }, { 5, 9, 2, 3, }, { 8, 4, 2, 4 }, { 5, 2, 6, 7 } };
 int[,] arr562 = new int[4, 4] { { 1, 4, 7, 2 }, { 1, 1, 1, 1, }, { 8, 4, 2, 4 }, { 5, 2, 6, 7 } };
 int[,] arr563 = new int[4, 4] { { 1, 4, 7, 2 }, { 5, 9, 1, 1, }, { 1, 1, 1, 1 }, { 5, 2, 6, 7 } };
 int[,] arr564 = new int[4, 4] { { 1, 4, 7, 2 }, { 5, 9, 1, 1, }, { 1, 1, 1, 1 }, { 0, 0, 0, 1 } };
 
-// System.Console.WriteLine();
+System.Console.WriteLine();
 void MinSumLine(int[,] array)
 {
     int[] sumArray = new int[array.GetLength(0)];
@@ -78,22 +78,22 @@ void MinSumLine(int[,] array)
         }
         sumArray[i] = sum;
     }
-    // for(int i = 0; i < sumArray.Length; i++) System.Console.Write($"{sumArray[i]} " );
+    for(int i = 0; i < sumArray.Length; i++) System.Console.Write($"{sumArray[i]} " );
     int min = 0;
     for (int i = 1; i < sumArray.Length; i++) if (sumArray[i] < sumArray[min]) min = i;
     System.Console.WriteLine($"Минимальная сумма элементов в строке: {min + 1}.");
 }
-// Print2Arr(arr561);
-// MinSumLine(arr561);
-// System.Console.WriteLine();
-// Print2Arr(arr562);
-// MinSumLine(arr562);
-// System.Console.WriteLine();
-// Print2Arr(arr563);
-// MinSumLine(arr563);
-// System.Console.WriteLine();
-// Print2Arr(arr564);
-// MinSumLine(arr564);
+Print2Arr(arr561);
+MinSumLine(arr561);
+System.Console.WriteLine();
+Print2Arr(arr562);
+MinSumLine(arr562);
+System.Console.WriteLine();
+Print2Arr(arr563);
+MinSumLine(arr563);
+System.Console.WriteLine();
+Print2Arr(arr564);
+MinSumLine(arr564);
 
 // Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 // Например, даны 2 матрицы:
@@ -122,7 +122,7 @@ void MultArray(int[,] arr1, int[,] arr2)
     Print2Arr(multArray);
 }
 
-// MultArray(array1, array2);
+MultArray(array1, array2);
 
 // Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, 
 // которая будет построчно выводить массив, добавляя индексы каждого элемента.
@@ -189,4 +189,5 @@ while (item < array62.Length)
     col++; // шагнул вправо
     row++; // вернул курсор в заполняемую область
 }
+System.Console.WriteLine();
 Print2Arr(array62);
