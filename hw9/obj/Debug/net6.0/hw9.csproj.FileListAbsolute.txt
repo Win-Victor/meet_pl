@@ -1,0 +1,15 @@
+D:\meeting_pl\hw9\obj\Debug\net6.0\hw9.csproj.AssemblyReference.cache
+D:\meeting_pl\hw9\obj\Debug\net6.0\hw9.GeneratedMSBuildEditorConfig.editorconfig
+D:\meeting_pl\hw9\obj\Debug\net6.0\hw9.AssemblyInfoInputs.cache
+D:\meeting_pl\hw9\obj\Debug\net6.0\hw9.AssemblyInfo.cs
+D:\meeting_pl\hw9\obj\Debug\net6.0\hw9.csproj.CoreCompileInputs.cache
+D:\meeting_pl\hw9\bin\Debug\net6.0\hw9.exe
+D:\meeting_pl\hw9\bin\Debug\net6.0\hw9.deps.json
+D:\meeting_pl\hw9\bin\Debug\net6.0\hw9.runtimeconfig.json
+D:\meeting_pl\hw9\bin\Debug\net6.0\hw9.dll
+D:\meeting_pl\hw9\bin\Debug\net6.0\hw9.pdb
+D:\meeting_pl\hw9\obj\Debug\net6.0\hw9.dll
+D:\meeting_pl\hw9\obj\Debug\net6.0\refint\hw9.dll
+D:\meeting_pl\hw9\obj\Debug\net6.0\hw9.pdb
+D:\meeting_pl\hw9\obj\Debug\net6.0\hw9.genruntimeconfig.cache
+D:\meeting_pl\hw9\obj\Debug\net6.0\ref\hw9.dll
